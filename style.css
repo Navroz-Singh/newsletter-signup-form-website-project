@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Roboto";
+    color: hsl(234, 29%, 20%);
+    font-size: 17px;
+}
+
+body{
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding: 30px;
+}
+
+.upper{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.points{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.card{
+    display: flex;
+    justify-content: flex-start;
+    gap:10px;
+}
+
+.lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap:15px;
+    width:25vw;
+
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    width: 25vw;
+}
+
+.emailadd{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.input_normal{
+    padding: 15px 20px;
+    border-radius: 5px;
+    border:1px groove hsl(231, 7%, 60%);
+    cursor: pointer;
+}
+
+.input_error{
+    padding: 15px 20px;
+    border-radius: 5px;
+    border:2px solid hsl(4, 100%, 67%);
+    cursor: pointer;
+    background-color:hsla(4, 100%, 67%, 0.177);
+    color:hsl(4, 100%, 67%);
+}
+
+.subs button{
+    border-style:none;
+    background-color: hsl(234, 29%, 20%);
+    color:white;
+    padding:20px 40px;
+    width:25vw;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .2s step-start;
+}
+
+.subs button:hover{
+    background: linear-gradient(to right, hsl(4, 100%, 67%), hsl(31, 95%, 51%));
+    box-shadow: 1px 15px 25px hsla(4, 100%, 67%, 0.358);
+}
+
+.uperwala{
+    display: flex;
+    justify-content: space-between;
+}
+
+#error{
+    font-size: 13px;
+    font-weight: 700;
+    color:hsl(4, 100%, 67%);
+}
+
+
+@media (max-width: 500px){
+    body{
+        background-color: white;
+    }
+    .container{
+        flex-direction: column-reverse;
+        margin:0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    .left{
+        gap: 20px;
+    }
+
+    .middle{
+        gap: 20px;
+    }
+
+    .lower{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        gap:15px;
+        width:80vw;
+    
+    }
+    
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap:7px;
+        width: 80vw;
+    }
+    
+    .emailadd{
+        font-size: 13px;
+        font-weight: 700;
+    }
+    
+    input{
+        padding: 15px 20px;
+        border-radius: 5px;
+        border:1px groove hsl(231, 7%, 60%);
+        cursor: pointer;
+    }
+    
+    .subs button{
+        border-style: none;
+        background-color: hsl(234, 29%, 20%);
+        color:white;
+        padding:20px 40px;
+        width:80vw;
+        border-radius: 7px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all .2s step-start;
+    }
+
+    .right img{
+        width: 100vw;
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+}
+
+
+
+@media (max-width:700px) and (min-width:500px){
+    body{
+        background-color: white;
+    }
+    .container{
+        flex-direction: column-reverse;
+        margin:0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    .left{
+        gap: 20px;
+    }
+
+    .middle{
+        gap: 20px;
+    }
+
+    .lower{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        gap:15px;
+        width:80vw;
+    
+    }
+    
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap:7px;
+        width: 80vw;
+    }
+    
+    .emailadd{
+        font-size: 13px;
+        font-weight: 700;
+    }
+    
+    input{
+        padding: 15px 20px;
+        border-radius: 5px;
+        border:1px groove hsl(231, 7%, 60%);
+        cursor: pointer;
+    }
+    
+    .subs button{
+        border-style: none;
+        background-color: hsl(234, 29%, 20%);
+        color:white;
+        padding:20px 40px;
+        width:80vw;
+        border-radius: 7px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all .2s step-start;
+    }
+
+    .right img{
+        width: 90vw;
+        height: auto;
+        display: block;
+        /* max-width: 100%; */
+    }
+}
